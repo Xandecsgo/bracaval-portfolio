@@ -55,7 +55,7 @@ return (
           project.content.wrapContent.fourthImg.map((img, index) => (
             <div key={index}>
               <img src={img.src} alt={img.alt} />
-              <p>{img.content}</p>blabla
+              <p>{img.content}</p>
             </div>
           ))
         ) : (

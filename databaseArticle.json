@@ -1,0 +1,16 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "slug": "test1",
+        "title": "Post 1",
+        "content": "<h2>Hello</h2>"
+      },
+      {
+        "id": 2,
+        "slug": "test2",
+        "title": "Post 2",
+        "content": "<p>This is the content of post 2.</p>"
+      }
+    ]
+}

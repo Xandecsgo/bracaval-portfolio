@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Aktiv';
+  src: url('/fonts/AktivGroteskCorp-Bold.woff2') format('woff2');
+  /* Vous pouvez également spécifier d'autres formats ici, comme woff2, ttf, etc. */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('/fonts/AktivGroteskCorp-LightItalic.woff2') format('woff2');
+  /* Vous pouvez également spécifier d'autres formats ici, comme woff2, ttf, etc. */
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('/fonts/AktivGroteskCorp-Medium.woff2') format('woff2');
+  /* Vous pouvez également spécifier d'autres formats ici, comme woff2, ttf, etc. */
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('/fonts/AktivGroteskCorp-Light.woff2') format('woff2');
+  /* Vous pouvez également spécifier d'autres formats ici, comme woff2, ttf, etc. */
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url('/fonts/AktivGroteskCorp-BoldItalic.woff2') format('woff2');
+  /* Vous pouvez également spécifier d'autres formats ici, comme woff2, ttf, etc. */
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  --black: #033535;
+  --hover: #021f1f;
+  --grey: #F0F0F0;
+
+/* ANIMATIONS */
+--anim: .3s;
+
+}
+
+/* Réinitialisation des styles par défaut du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+img {
+  display: block;
+}
+
+/* Style de base pour le corps de la page */
+body {
+  font-family: Aktiv, sans-serif;
+  font-weight: light;
+  background-color: #ffffff; /* Couleur d'arrière-plan de la page */
+  color: var(--Black, #033535);
+  font-size: 23.61px;
+}
+
+/* Styles pour les liens */
+a {
+  text-decoration: none; /* Supprime la soulignement des liens */
+  color: #0070f3; /* Couleur du lien par défaut */
+}
+
+a:hover {
+  text-decoration: underline; /* Soulignement du lien au survol */
+}
+
+/* Styles pour les titres */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 61.808px;
+}
+
+h2 {
+  font-size: 38.201px;
+}
+
+h3 {
+  font-size: 23.61px;
+  margin-bottom: 9.02px;
+  font-style: italic;
+}
+
+/* Style pour les paragraphes */
+p {
+  line-height: 1.5; /* Espacement des lignes des paragraphes */
+}
+
+/* Style pour les boutons */
+button {
+  cursor: pointer; /* Curseur de type main au survol des boutons */
+}
+
+/* Style pour les images */
+img {
+  max-width: 100%; /* Les images ne dépassent pas la largeur de leur conteneur */
+  height: auto; /* Les images conservent leur proportion d'origine */
+  overflow: hidden;
+}
+
+main {
+  padding: 38.2px 0;
+  padding-top: calc(86px + 38.2px);
+  padding-bottom: calc(86px + 38.2px);
+}

@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    padding: 23.61px;
+    font-size: 14.59px;
+    height: 86px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 23.61px;
+        }
+}

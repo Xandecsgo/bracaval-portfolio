@@ -1,0 +1,75 @@
+{
+  "projets": [
+    {
+      "categories": ["Branding", "UX/UI"],
+      "slug": "projet1",
+      "title": "Flots de saveurs",
+      "timeDate": "5 min de lecture | 16 avril 2023",
+      "websiteUrl": "<a href=\"https://flots-de-saveurs.webflow.io/\">flotsdesaveurs.fr</a>",
+      "behanceUrl": "<a href=\"https://www.behance.net/gallery/177295743/Cration-dune-direction-artistiquesite-internet\">Voir le projet sur Behance</a>",
+      "content":  {
+        "wrapContent": {
+          "firstImg": {
+            "src": "https://zupimages.net/up/23/32/gpcr.png",
+            "alt": "Flots de saveurs"
+          },
+          "secondImg": [
+            {
+              "src": "https://zupimages.net/up/23/38/p2zw.png",
+              "alt": "Flots de saveurs, affiche1"
+            },
+            {
+              "src": "https://zupimages.net/up/23/38/qfi9.png",
+              "alt": "Flots de saveurs, affiche2"
+            }
+          ],
+          "citation": {
+            "openQuote": "quote.svg",
+            "content": "Au cœur des vastes océans, où les vagues se rencontrent et se fondent dans une danse infinie, naît une passion pour l'art de la macération du rhum. Flots de Saveurs est née de cette fascination pour l'océan et de l'amour pour les saveurs uniques qu'il peut offrir.",
+            "closeQuote": "quote.svg"
+          },
+          "thirdImg": [
+            {
+              "src": "https://zupimages.net/up/23/38/xr47.png",
+              "alt": "Flots de saveurs, affiche3"
+            },
+            {
+              "src": "https://zupimages.net/up/23/38/y95f.png",
+              "alt": "Flots de saveurs, affiche4"
+            }
+          ],
+          "firstText": {
+            "title": "L'histoire de Flots de Saveurs",
+            "content": "<p>Notre fondateur, Guillaume Bracaval, est un explorateur dans l'âme. </br></br>À l’aide de sa boussole, il a passé des années à naviguer sur les mers du globe, s'immergeant dans les cultures maritimes et découvrant les richesses que les océans recèlent. C'est au cours de ses voyages qu'il a été captivé par l'idée de combiner les mystères de l'océan avec l'art de la macération.</br></br>Chaque bouteille de Flots de Saveurs est le fruit d'un long processus de macération, nécessitant trois semaines de patience et d'attention. C'est pendant cette période que le rhum se mêle aux arômes marins, créant un élixir envoûtant qui incarne l'esprit de l'océan.</p>"
+          },
+          "fourthImg": {
+            "src": "https://zupimages.net/up/23/32/gpcr.png",
+            "alt": "Guillaume Bracaval, Fondateur de Flots de saveurs",
+            "content": "Guillaume Bracaval, Fondateur de Flots de saveurs"
+          },
+          "firstH2": {
+            "title": "Campagne marketing",
+            "src": "https://zupimages.net/up/23/38/32ai.png",
+            "alt": "Guillaume Bracaval, Fondateur de Flots de saveurs"
+          },
+          "secondH2": {
+            "title": "Blog",
+            "src": "https://zupimages.net/up/23/32/gpcr.png",
+            "alt": "Guillaume Bracaval, Fondateur de Flots de saveurs"
+          },
+          "thirdH2": {
+            "title": "Animation du logo",
+            "src": "https://zupimages.net/up/23/38/bxts.png",
+            "alt": "Guillaume Bracaval, Fondateur de Flots de saveurs"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "slug": "test2",
+      "title": "Post 2",
+      "content": "<p>This is the content of post 2.</p>"
+    }
+  ]
+}

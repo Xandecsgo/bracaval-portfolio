@@ -1,0 +1,146 @@
+
+
+.wrapPage {
+    display: flex;
+    width: 100%;
+    padding: 0px 23.61px;
+    flex-direction: column;
+    align-items: center;
+    gap: 76.08px;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.578px;
+    font-size: 14.592px;
+    text-align: center;
+
+    .categories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23.61px;
+
+    & div {
+    padding: 4px 32px;
+    align-items: flex-start;
+    background-color: var(--grey);
+    letter-spacing: 3.502px;
+    text-transform: uppercase;
+    }
+}
+
+}
+
+.intro { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 76.08px;
+    width: 100%;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 23.61px;
+        width: 100%;
+    }
+
+}
+
+.firstImg {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        background-color: #fff;
+        left: -10%;
+        top: -90%;
+        transform: rotate(-4deg);
+    }
+}
+
+.secondImg, .firstImg, .thirdImg {
+    display: flex;
+    gap: 23.61px;
+    width: calc(50% - 23.61px/2);
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 450px;
+        width: 100%;
+    }
+    }
+
+    .image450 {
+        height: 450px;
+        width: 100%;
+    }
+
+
+.citation {  
+    
+    width: 100%;
+    .openQuote {
+        position: absolute;
+        margin-left: -76.08px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .closeQuote {
+        rotate: 180deg;
+        margin-left: 808.08px;
+        margin-top: -20px;
+    }
+}
+
+.informations, .citation, .fourthImg, .firstText, .contenu   {
+    max-width: 800px;
+}
+
+.contenu { 
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 76.08px;
+    text-align: center;
+}
+
+.fourthImg {
+    p {
+        font-size: 14.592px;
+        font-style: italic;
+        font-weight: 300;
+    }
+}
+
+.btn {
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        background-color: var(--black);
+        font-size: 14.592px;
+        transition: .3s;
+    }
+}
+
+.btn:hover {
+    
+    a {
+        color: white;
+        background-color: var(--hover);
+    }
+}

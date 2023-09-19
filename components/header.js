@@ -67,7 +67,7 @@ const Header = () => {
                     </ul>
 
                     <div className={styles.shape} style={{
-                        transform: `translateY(-${transitionY}px) translateX(${transitionY}px) rotate(${transitionY}deg)`
+                        transform: `translateY(-${transitionY}px)`
                     }}>
                         <div className={styles.shape}>
                             <svg>

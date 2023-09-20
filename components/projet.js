@@ -10,7 +10,7 @@ const Projet = () => {
         <>
         <div className={styles.wrap}>
             <div><img src="https://zupimages.net/up/23/32/gpcr.png" alt="" /></div>
-            <div></div>
+            <div>test</div>
             <div></div>
         </div>
         </>

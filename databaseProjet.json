@@ -4,6 +4,10 @@
       "categories": ["Branding", "UX/UI"],
       "slug": "projet1",
       "title": "Flots de saveurs",
+      "coverImg": {
+        "src": "https://zupimages.net/up/23/32/gpcr.png",
+        "alt": "Cover Flots de saveurs"
+      }, 
       "timeDate": "5 min de lecture | 16 avril 2023",
       "websiteUrl": "<a href=\"https://flots-de-saveurs.webflow.io/\">flotsdesaveurs.fr</a>",
       "behanceUrl": "<a href=\"https://www.behance.net/gallery/177295743/Cration-dune-direction-artistiquesite-internet\">Voir le projet sur Behance</a>",

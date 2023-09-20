@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
+import Projet from '@/components/projet'
 
 
 export default function Home() {
+
+  
   return (
     <>
       <Head>
@@ -45,6 +48,11 @@ Que puis-je faire pour vous ?</p>
         </div>
 
       </section>
+
+      <div id="portfolio">
+        <h2>Portfolio</h2>
+        <Projet />
+      </div>
 
       </main>
     </>

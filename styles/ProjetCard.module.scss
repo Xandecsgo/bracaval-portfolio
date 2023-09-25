@@ -72,3 +72,9 @@
 .projet-info.visible {
   transform: translateX(0); /* Déplacez l'élément vers la position initiale */
 }
+
+ .projet-card{
+    & > div {
+        margin-bottom: 23px;
+    }
+}

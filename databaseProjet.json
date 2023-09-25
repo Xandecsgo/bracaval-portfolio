@@ -73,6 +73,10 @@
       "id": 2,
       "slug": "test2",
       "title": "Post 2",
+      "coverImg": {
+        "src": "https://zupimages.net/up/23/32/gpcr.png",
+        "alt": "Cover Flots de saveurs"
+      }, 
       "content": "<p>This is the content of post 2.</p>"
     }
   ]

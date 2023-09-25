@@ -1,0 +1,69 @@
+/* ProcessusSlider.module.scss */
+
+.processusSlider {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden; /* Masque le contenu débordant */
+  }
+  
+  .slidesContainer {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+
+    .textColumn {
+        flex: 1;
+        text-align: start;
+      }
+  }
+  
+  
+  
+  .imageColumn {
+    
+  }
+  
+  .textColumn p {
+    font-size: 23px;
+  }
+  
+  /* Nouveau style pour les images */
+  .imageColumn img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .prevButton,
+  .nextButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .prevButton {
+    margin-right: 10px;
+  }
+  
+  .nextButton {
+    margin-left: 10px;
+  }
+  
+  

@@ -1,15 +1,19 @@
-// Home.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 import ProjetCard from '../components/ProjetCard';
 import data from '../databaseProjet.json';
 import ProjetFilter from '../components/ProjetFilter';
 import styles from '@/styles/Home.module.scss';
+import ProcessusSlider from '../components/ProcessusSlider';
 
 export default function Home() {
   const [projets, setProjets] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isPortfolioSectionVisible, setIsPortfolioSectionVisible] = useState(false);
+  const [isProcessusSectionVisible, setIsProcessusSectionVisible] = useState(false);
+
+  const portfolioRef = useRef(null);
+  const processusRef = useRef(null);
 
   useEffect(() => {
     setProjets(data.projets);
@@ -40,19 +44,21 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const checkPortfolioSectionVisibility = () => {
-      const portfolioSection = document.getElementById("portfolio");
-      if (portfolioSection) {
-        const rect = portfolioSection.getBoundingClientRect();
-        setIsPortfolioSectionVisible(rect.top < window.innerHeight);
+    const checkSectionVisibility = () => {
+      if (portfolioRef.current && processusRef.current) {
+        const portfolioRect = portfolioRef.current.getBoundingClientRect();
+        const processusRect = processusRef.current.getBoundingClientRect();
+
+        setIsPortfolioSectionVisible(portfolioRect.top < window.innerHeight);
+        setIsProcessusSectionVisible(processusRect.top < window.innerHeight);
       }
     };
 
-    window.addEventListener("scroll", checkPortfolioSectionVisibility);
-    checkPortfolioSectionVisibility();
+    window.addEventListener("scroll", checkSectionVisibility);
+    checkSectionVisibility();
 
     return () => {
-      window.removeEventListener("scroll", checkPortfolioSectionVisibility);
+      window.removeEventListener("scroll", checkSectionVisibility);
     };
   }, []);
 
@@ -80,7 +86,7 @@ export default function Home() {
               fill="var(--black)"
             >
               <path className="cls-2" d="m41.11,57.43L34.23,0l-16.61,2,6.88,57.43,16.61-2Z" />
-              <path className="cls-2" d="m61.8,38.96l-13.16-10.37-27.2,34.74,13.16,10.37,27.2-34.74Z" />
+              <path className="cls-2" d="m61.8,38.96l-13.16-10.37-27.2,34.74 13.16,10.37 27.2-34.74Z" />
               <path className="cls-2" d="m44.96,60.5L10.34,33.21,0,46.41l34.63,27.29,10.33-13.2Z" />
             </svg>
           </div>
@@ -104,29 +110,50 @@ export default function Home() {
         <section className={styles.portfolio}>
           <h2 className="mb76">Portfolio</h2>
 
-          {isPortfolioSectionVisible && (
-            <ProjetFilter
-            categories={categoriesArray}
-            selectedCategory={selectedCategory}
-            onSelectCategory={setSelectedCategory}
-            isAnimated={true}
-            isPortfolioSectionVisible={isPortfolioSectionVisible}
-          />
-          
+          {isPortfolioSectionVisible && !isProcessusSectionVisible && (
+            <ProjetFilter 
+              categories={categoriesArray}
+              selectedCategory={selectedCategory}
+              onSelectCategory={setSelectedCategory}
+              isAnimated={true}
+              isPortfolioSectionVisible={isPortfolioSectionVisible}
+            />
           )}
 
-          <div id="portfolio">
-            <div className={styles.projetlist}>
-              {filterProjetsByCategory().map((projet) => (
-                <ProjetCard key={projet.slug} projet={projet} />
-              ))}
-            </div>
+          <div ref={portfolioRef}>
+            {filterProjetsByCategory().map((projet) => (
+              <ProjetCard key={projet.slug} projet={projet} />
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.processus}>
+          <h2 className="mb76">Processus de conception</h2>
+
+          <div ref={processusRef}>
+            <ProcessusSlider
+    slides={[
+      {
+        title: 'Exploration et Compréhension',
+        description: 'Livraison du design en accord avec la philosophie des besoins culturels, sociaux et environnementaux.',
+        imageSrc: '../images/exploration.svg',
+      },
+      {
+        title: 'Étape 2',
+        description: 'Description de l\'étape 2',
+        imageSrc: '/chemin/vers/image2.jpg',
+      },
+       {
+        title: 'Étape 3',
+        description: 'Description de l\'étape 2',
+        imageSrc: '/chemin/vers/image2.jpg',
+      },
+      // Ajoutez d'autres diapositives de la même manière
+    ]}
+  />
           </div>
         </section>
       </main>
     </>
   );
 }
-
-
-

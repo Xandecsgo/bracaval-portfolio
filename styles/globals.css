@@ -90,8 +90,15 @@ h2 {
 
 h3 {
   font-size: 23px;
-  margin-bottom: 9.02px;
+  margin-bottom: 9px;
   font-style: italic;
+}
+
+h4 {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 9px;
 }
 
 /* Style pour les paragraphes */

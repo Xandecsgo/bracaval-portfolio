@@ -18,7 +18,7 @@ const FiltreProjetBar = ({ categories, selectedCategory, onSelectCategory, isAni
         className={`${styles.button} ${selectedCategory === null ? styles.active : ''}`}
         onClick={() => onSelectCategory(null)}
       >
-        All
+        Tout
       </button>
       {categories.map((category) => (
         <button

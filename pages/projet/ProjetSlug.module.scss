@@ -34,78 +34,52 @@
 
 }
 
-.intro { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 76.08px;
-    width: 100%;
 
-    .top {
-        display: flex;
-        flex-direction: column;
-        gap: 23.61px;
-        width: 100%;
-    }
-
-}
 
 .firstImg {
     overflow: hidden;
     position: relative;
-
-    &:after {
-        content: '';
-        position: absolute;
-        width: 120%;
-        height: 100%;
-        background-color: #fff;
-        left: -10%;
-        top: -90%;
-        transform: rotate(-4deg);
-    }
+    clip-path: polygon(0 21.3%, 100% 0%, 100% 100%, 0% 100%);
+    margin-bottom: 23px;
 }
 
 .secondImg, .firstImg, .thirdImg {
     display: flex;
     gap: 23.61px;
-    width: calc(50% - 23.61px/2);
 
     img {
         width: 100%;
         object-fit: cover;
-        height: 450px;
         width: 100%;
     }
     }
-
-    .image450 {
-        height: 450px;
-        width: 100%;
-    }
-
 
 .citation {  
-    
     width: 100%;
+
     .openQuote {
-        position: absolute;
-        margin-left: -76.08px;
+        margin-bottom: 10px;
     }
 
     p {
         text-align: center;
     }
 
+    img {
+        width: 45px;
+        display: block;
+    }
+
     .closeQuote {
         rotate: 180deg;
-        margin-left: 808.08px;
-        margin-top: -20px;
+        margin-left: auto;
     }
 }
 
 .informations, .citation, .fourthImg, .firstText, .contenu   {
     max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contenu { 

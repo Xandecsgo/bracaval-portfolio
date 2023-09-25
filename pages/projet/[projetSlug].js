@@ -3,6 +3,7 @@ import fs from 'fs';
 import styles from './ProjetSlug.module.scss'; // Importez le module CSS
 
 const ProjectDetails = ({ project }) => {
+  console.log('project : ',project)
 const router = useRouter();
 const { projetSlug } = router.query;
 
@@ -11,9 +12,12 @@ return (
     <div className={styles.wrapPage}> {/* Utilisez la classe du module */}
     <div className={styles.informations}> {/* Utilisez la classe du module */}
     <div className={styles.categories}>
-{project.categories.map((category, index) => (
-  <div key={index} className={styles.category}>{category}</div>
-))}
+{
+  project.categories &&
+  project.categories.map((category, index) => (
+    <div key={index} className={styles.category}>{category}</div>
+  ))
+}
 </div>
       <h1>{project.title}</h1>
       <p>{project.timeDate}</p>
@@ -22,30 +26,30 @@ return (
 
     <div className={styles.intro}> {/* Utilisez la classe du module */}
       <div className={styles.top}>
-        <div className={`${styles.firstImg} ${styles.image450}`}> {/* Utilisez la classe du module */}
+        <div className={`${styles.firstImg}`}> {/* Utilisez la classe du module */}
           <img src={project.content.wrapContent.firstImg.src} alt={project.content.wrapContent.firstImg.alt} />
         </div>
 
-        <div className={`${styles.secondImg} ${styles.image450}`}> {/* Utilisez la classe du module */}
+        <div className={`${styles.secondImg} mb76`}> {/* Utilisez la classe du module */}
           {project.content.wrapContent.secondImg.map((img, index) => (
             <img key={index} src={img.src} alt={img.alt}  />
           ))}
         </div>
       </div>
 
-      <div className={styles.citation}> {/* Utilisez la classe du module */}
+      <div className={`${styles.citation} mb76`}> {/* Utilisez la classe du module */}
         <img className={styles.openQuote} src={`/images/${project.content.wrapContent.citation.openQuote}`} alt="openQuote" />
         <p>{project.content.wrapContent.citation.content}</p>
         <img className={styles.closeQuote} src={`/images/${project.content.wrapContent.citation.closeQuote}`} alt="closeQuote" />
       </div>
 
-      <div className={`${styles.thirdImg} ${styles.image450}`}> {/* Utilisez la classe du module */}
+      <div className={`${styles.thirdImg} mb76`}> {/* Utilisez la classe du module */}
         {project.content.wrapContent.thirdImg.map((img, index) => (
           <img key={index} src={img.src} alt={img.alt} />
         ))}
       </div>
 
-      <div className={styles.firstText}> {/* Utilisez la classe du module */}
+      <div className={`${styles.firstText} mb76`}> {/* Utilisez la classe du module */}
         <h3>{project.content.wrapContent.firstText.title}</h3>
         <div dangerouslySetInnerHTML={{ __html: project.content.wrapContent.firstText.content }} />
       </div>

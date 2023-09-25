@@ -56,17 +56,13 @@
   
 }
 
-img {
-  display: block;
-}
-
 /* Style de base pour le corps de la page */
 body {
   font-family: Aktiv, sans-serif;
   font-weight: light;
   background-color: #ffffff; /* Couleur d'arrière-plan de la page */
   color: var(--Black, #033535);
-  font-size: 23.61px;
+  font-size: 23px;
 }
 
 /* Styles pour les liens */
@@ -93,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-size: 23.61px;
+  font-size: 23px;
   margin-bottom: 9.02px;
   font-style: italic;
 }
@@ -115,8 +111,15 @@ img {
   overflow: hidden;
 }
 
-main {
-  padding: 38.2px 0;
+body {
   padding-top: calc(86px + 38.2px);
   padding-bottom: calc(86px + 38.2px);
+}
+
+.mb76 {
+  margin-bottom: 76px;
+}
+
+.mb23 {
+  margin-bottom: 23px;
 }

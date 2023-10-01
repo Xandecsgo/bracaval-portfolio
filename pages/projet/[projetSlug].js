@@ -74,7 +74,7 @@ const ProjectDetails = ({ project }) => {
                 ) : null
               ) : (
                 (project.content.wrapContent.fourthImg.src || project.content.wrapContent.fourthImg.content) && (
-                  <div className={styles.fourthImg}>
+                  <div className={`${styles.fourthImg} mb76`}>
                     {project.content.wrapContent.fourthImg.src && <img src={project.content.wrapContent.fourthImg.src} alt={project.content.wrapContent.fourthImg.alt} />}
                     {project.content.wrapContent.fourthImg.content && <p>{project.content.wrapContent.fourthImg.content}</p>}
                   </div>

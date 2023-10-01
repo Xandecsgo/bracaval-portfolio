@@ -1,16 +1,38 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "slug": "test1",
-        "title": "Post 1",
-        "content": "<h2>Hello</h2>"
+  "posts": [
+    {
+      "slug": "un-bon-design",
+      "title": "Qu'est-ce qu'un bon design ?",
+      "linkedinUrl": "<a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7105503792229400576\">Voir le post sur LinkedIn</a>",
+      "coverImg": {
+        "src": "https://zupimages.net/up/23/39/4fsl.png",
+        "alt": "Cover qu'est-ce qu'un bon design ?"
       },
-      {
-        "id": 2,
-        "slug": "test2",
-        "title": "Post 2",
-        "content": "<p>This is the content of post 2.</p>"
+      "timeDate": "5 min de lecture | 11 septembre 2023",
+      "content": {
+        "wrapContent": {
+          "firstText": {
+            "content": "<p>Mesdames, Messieurs,</br></br>Après de longues années de réflexion, je souhaite aujourd'hui explorer une question qui m'a souvent interpelé : Doit-on privilégier la fonctionnalité ou l'esthétique dans le design ?</br></br>Cette interrogation a pris forme au fil de mes expériences professionnelles. Il serait naturel de répondre que le design doit allier fonctionnalité et esthétique, mais est-ce vraiment si simple ?</br></br> Pour qu'un design réponde à ces deux impératifs, il est essentiel de bien comprendre la nature même du design. Contrairement à l'art, le design a pour vocation première de résoudre des problèmes fonctionnels et d'améliorer notre quotidien en intégrant des considérations pratiques et ergonomiques.</br></br> En France, on observe souvent une confusion dans l'utilisation du mot 'design'. Il est important de garder à l'esprit que, si l'on traduit littéralement, design équivaut à conception.</br></br> <h3>Mais alors, qu'est-ce qui définit réellement un bon design ?</h3></br></br>Un bon design est fonctionnel, utilisable, esthétique, répond à un besoin, accessible, prend en compte l'aspect associatif, est responsable, adaptable, innovant, évolutif, éthique, culturel, et centré sur l'utilisateur.</br></br> Il est la clé d'une expérience utilisatrice réussie.</br></br>Donc, à votre avis, qu'est-ce qu'un bon design ?</br></br>N'hésitez pas à partager vos réflexions et à poursuivre la discussion sur ce sujet passionnant ! 🚀 #Design #UserExperience #Ethique #Innovation</p>"
+          }
+        }
       }
-    ]
+    },
+    {
+      "slug": "ecole-de-la-nature",
+      "title": "L'UX/UI Biomorphique : L'école de la nature",
+      "linkedinUrl": "<a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7106293344464445440\">Voir le post sur LinkedIn</a>",
+      "coverImg": {
+        "src": "https://zupimages.net/up/23/39/wvoa.png",
+        "alt": "Cover l'UX/UI Biomorphique : L'école de la nature"
+      },
+      "timeDate": "5 min de lecture | 18 septembre 2023",
+      "content": {
+        "wrapContent": {
+          "firstText": {
+            "content": "<p>Vous vous demandez si le design UX/UI inspiré par la nature fonctionne réellement ? Détrompez-vous, cela fonctionne, et de manière remarquable.</br></br> <h3>Qu'est-ce que le Biomorphisme ?</h3></br>Le biomorphisme est l'art de puiser inspiration et enseignements de la nature pour perfectionner nos créations. Avec des millénaires d'expérience, pourquoi ne pas faire de la nature notre guide dans le domaine du design ?</br></br> <h3>Pourquoi cette approche est cruciale ?</h3></br> <h5>Les Atouts du Biomorphisme :</h5></br> <li>L'Élégance Naturelle : La nature nous offre des motifs et des formes d'une élégance inégalée. Des coquillages aux feuilles, ces éléments organiques peuvent rendre nos interfaces irrésistibles.</li> <li>Adaptabilité : La nature s'adapte sans effort à son environnement. Nos designs peuvent en faire autant, ajustant automatiquement leur fonctionnement aux besoins des utilisateurs.</li> <li>Navigation Intuitive : En observant la nature, nous pouvons créer des expériences de navigation plus fluides et intuitives, simplifiant la vie de l'utilisateur.</li> </br></br><h3>Conclusion :</h3></br> L'UX/UI design inspiré par la nature est un véritable atout. En tirant parti des enseignements de la nature, on peut rendre nos sites web plus beaux, plus efficaces et plus proches de ce que notre instinct nous dicte. </br></br>Êtes-vous prêt à laisser la nature guider votre prochain projet de design ? Partagez vos réflexions et vos questions ! #UXUI #Biomorphisme #Biomimétisme #Design #Webdesign #UserExperience</p>"
+          }
+        }
+      }
+    }
+  ]
 }

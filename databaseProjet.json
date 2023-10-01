@@ -2,7 +2,7 @@
   "projets": [
     {
       "categories": ["Branding", "UX/UI"],
-      "slug": "projet1",
+      "slug": "flots-de-saveurs",
       "title": "Flots de saveurs",
       "coverImg": {
         "src": "https://zupimages.net/up/23/32/gpcr.png",
@@ -13,10 +13,6 @@
       "behanceUrl": "<a href=\"https://www.behance.net/gallery/177295743/Cration-dune-direction-artistiquesite-internet\">Voir le projet sur Behance</a>",
       "content":  {
         "wrapContent": {
-          "firstImg": {
-            "src": "https://zupimages.net/up/23/32/gpcr.png",
-            "alt": "Flots de saveurs"
-          },
           "secondImg": [
             {
               "src": "https://zupimages.net/up/23/38/p2zw.png",
@@ -70,14 +66,137 @@
       }
     },
     {
-      "id": 2,
-      "slug": "test2",
-      "title": "Post 2",
+      "categories": ["Branding", "UX/UI", "Mobile"],
+      "slug": "enfants-du-monde",
+      "title": "Enfants du monde",
       "coverImg": {
-        "src": "https://zupimages.net/up/23/32/gpcr.png",
-        "alt": "Cover Flots de saveurs"
+        "src": "https://zupimages.net/up/23/18/lidb.png",
+        "alt": "Cover Enfants du monde"
       }, 
-      "content": "<p>This is the content of post 2.</p>"
+      "timeDate": "5 min de lecture | 16 avril 2023",
+      "websiteUrl": "",
+      "behanceUrl": "<a href=\"https://www.behance.net/gallery/166870839/Cration-dune-application-mobile-de-dons\">Voir le projet sur Behance</a>",
+      "content":  {
+        "wrapContent": {
+          "secondImg": [
+            {
+              "src": "",
+              "alt": ""
+            },
+            {
+              "src": "",
+              "alt": ""
+            }
+          ],
+          "citation": {
+            "openQuote": "quote.svg",
+            "content": "Il ne peut y avoir de plus grand don que celui de donner son temps et son énergie pour aider les autres sans rien attendre en retour.",
+            "closeQuote": "quote.svg"
+          },
+          "thirdImg": [
+            {
+              "src": "https://zupimages.net/up/23/39/3ext.png",
+              "alt": "Flots de saveurs, affiche1"
+            },
+            {
+              "src": "https://zupimages.net/up/23/39/lgn3.png",
+              "alt": "Flots de saveurs, affiche2"
+            }
+          ],
+          "firstText": {
+            "title": "",
+            "content": "<p><h3>Suivez Votre Impact.</h3></br>Nous croyons en la transparence totale. Notre application vous permet de suivre l'évolution des projets que vous soutenez, de voir les photos et les témoignages des enfants que vous avez aidés, et de mesurer concrètement l'impact de votre générosité.</br></br><h3>Faites une différence mondiale, à votre manière.</h3></br>Avec l'application Enfants du Monde, il n'a jamais été aussi simple de soutenir des enfants en difficulté. Faites un don en quelques clics pour fournir une éducation de qualité, des soins médicaux essentiels, de la nourriture nutritive, et un toit sûr à ces enfants qui en ont tant besoin. Vous pouvez choisir le projet qui vous tient le plus à cœur et voir directement l'impact de votre don.</p>"
+          },
+          "fourthImg": {
+            "src": "https://zupimages.net/up/23/39/am9m.png",
+            "alt": "Hey!",
+            "content": ""
+          },
+          "firstH2": {
+            "title": "Couleurs",
+            "src": "https://zupimages.net/up/23/39/rz8l.png",
+            "alt": "Palette de couleur"
+          },
+          "secondH2": {
+            "title": "Typographie",
+            "src": "https://zupimages.net/up/23/39/li3w.png",
+            "alt": "Typographie - ITC Avant Garde Gothic"
+          },
+          "thirdH2": {
+            "title": "",
+            "src": "",
+            "alt": ""
+          }
+        }
+      }
+    },
+    {
+      "categories": ["Branding", "Logo"],
+      "slug": "kerat",
+      "title": "Kerat",
+      "coverImg": {
+        "src": "https://zupimages.net/up/23/39/2ay9.png",
+        "alt": "Cover Kerat"
+      }, 
+      "timeDate": "5 min de lecture | 16 avril 2023",
+      "websiteUrl": "<a href=\"https://flots-de-saveurs.webflow.io/\">flotsdesaveurs.fr</a>",
+      "behanceUrl": "<a href=\"https://www.behance.net/gallery/177295743/Cration-dune-direction-artistiquesite-internet\">Voir le projet sur Behance</a>",
+      "content":  {
+        "wrapContent": {
+          "secondImg": [
+            {
+              "src": "https://zupimages.net/up/23/39/z6ao.png",
+              "alt": "Logo Kerat"
+            },
+            {
+              "src": "https://zupimages.net/up/23/39/ogvv.png",
+              "alt": "Affiches Kerat"
+            }
+          ],
+          "citation": {
+            "openQuote": "quote.svg",
+            "content": "C’est la gourmandise capillaire incontournable du moment !",
+            "closeQuote": "quote.svg"
+          },
+          "thirdImg": [
+            {
+              "src": "https://zupimages.net/up/23/39/9tk0.png",
+              "alt": "Pots Kerat"
+            },
+            {
+              "src": "https://zupimages.net/up/23/39/esxc.png",
+              "alt": "Stand Kerat"
+            }
+          ],
+          "firstText": {
+            "title": "",
+            "content": "<p><h3>Kerat est une marque de shampoing ancrée dans le présent.</h3></br>Mais, ce n’est pas pour autant qu’elle ne s’inspire pas des années précédentes pour rebondir sur un produit néo-vintage. En effet, pour bien comprendre, il faudrait retourner aux racines de la création d’un shampoing.</br></br><h3>L’inspiration des sixties :</h3></br>C’était le temps de toutes les révolutions : sexuelle, morale, artistique (Nouvelle Vague, pop art...), scientifique et technologique (première greffe du cœur, premier Homme sur la  lune, lancement du projet Arpanet, ancêtre d’internet). Niveau concurence, c’est aussi dans ces années que la marque de shampoing «dop» sort son tube «shampoing crème». Cette marque est d’autant plus inspirante puisqu’elle à instaurée le fameux pot de crème bleu, intéressant car réutilisable, dans un monde ou la surconsommation était de mise.</br></br><h3>Création de Kerat : une gourmandise pour nos cheveux.</h3></br>C’est  donc  d’un  mariage  entre  les  années 1960 et les années actuelles qu’est  née  «Kerat», la marque de crème de shampoing nourrissante pour cheveux.</br></br><h5>Kerat a spécialisé un shampoing assez surprenant...</h5></br><li>Une texture crème, pour nourrir vos cheveux en profondeur.</li><li>Pourquoi «Kream» de shampoing? Petit clin d’oeil à la forme du pot qui ressemble fortement à un pot de glace (ice  cream) réutilisable.</li><li>Le «K» de Kerat qui remplace le «C» de cream.</li><li>Des couleurs pop (art...)</li></p>"
+          },
+          "fourthImg": {
+            "src": "",
+            "alt": "",
+            "content": ""
+          },
+          "firstH2": {
+            "title": "",
+            "src": "",
+            "alt": ""
+          },
+          "secondH2": {
+            "title": "",
+            "src": "",
+            "alt": ""
+          },
+          "thirdH2": {
+            "title": "",
+            "src": "",
+            "alt": ""
+          }
+        }
+      }
     }
+    
   ]
 }
+
+

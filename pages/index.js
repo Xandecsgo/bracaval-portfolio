@@ -5,8 +5,15 @@ import data from '../databaseProjet.json';
 import ProjetFilter from '../components/ProjetFilter';
 import styles from '@/styles/Home.module.scss';
 import ProcessusSlider from '../components/ProcessusSlider';
+import ArticleCard from '../components/ArticleCard';
+import databaseArticle from '../databaseArticle'; 
+
 
 export default function Home() {
+
+  const articles = databaseArticle.posts;
+
+
   const [projets, setProjets] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isPortfolioSectionVisible, setIsPortfolioSectionVisible] = useState(false);
@@ -65,7 +72,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio de Guillaume Bracaval - Direction artistique digitale, graphisme d'interface et UX design</title>
+        <title>Site internet de Guillaume Bracaval - Direction artistique digitale, graphisme d'interface et UX design</title>
         <meta name="description" content="Designer avec expertise en direction artistique digitale, graphisme d'interface et UX design. Compétences en gestion de projet et communication. Maîtrise des logiciels Adobe et Figma." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
@@ -120,7 +127,7 @@ export default function Home() {
             />
           )}
 
-          <div ref={portfolioRef}>
+          <div ref={portfolioRef} className="mb23">
             {filterProjetsByCategory().map((projet) => (
               <ProjetCard key={projet.slug} projet={projet} />
             ))}
@@ -130,7 +137,7 @@ export default function Home() {
         <section className={styles.processus}>
           <h2 className="mb76">Processus de conception</h2>
 
-          <div ref={processusRef}>
+          <div ref={processusRef} className="mb76">
             <ProcessusSlider
     slides={[
       {
@@ -153,6 +160,19 @@ export default function Home() {
   />
           </div>
         </section>
+
+        <section className={styles.portfolio}>
+          <h2 className="mb76">Blog</h2>
+          <div className={styles.articleContainer}>
+        {articles.map((article, index) => (
+          <ArticleCard key={index} article={article} />
+        ))}
+      </div>
+          <div>
+
+          </div>
+        </section>
+        
       </main>
     </>
   );

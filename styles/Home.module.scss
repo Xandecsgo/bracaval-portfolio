@@ -60,3 +60,10 @@
 .portfolio {
     position: relative;
 }
+
+.articleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+
+  }

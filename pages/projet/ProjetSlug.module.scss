@@ -3,31 +3,31 @@
 .wrapPage {
     display: flex;
     width: 100%;
-    padding: 0px 23.61px;
+    padding: 0px 23px;
     flex-direction: column;
     align-items: center;
-    gap: 76.08px;
+    gap: 76px;
 }
 
 .informations {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14.578px;
-    font-size: 14.592px;
+    gap: 14px;
+    font-size: 14px;
     text-align: center;
 
     .categories {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 23.61px;
+    gap: 23px;
 
     & div {
     padding: 4px 32px;
     align-items: flex-start;
     background-color: var(--grey);
-    letter-spacing: 3.502px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     }
 }
@@ -45,7 +45,7 @@
 
 .secondImg, .firstImg, .thirdImg {
     display: flex;
-    gap: 23.61px;
+    gap: 23px;
 
     img {
         width: 100%;
@@ -88,25 +88,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 76.08px;
+    gap: 76px;
     text-align: center;
 }
 
 .fourthImg {
     p {
-        font-size: 14.592px;
+        font-size: 14px;
         font-style: italic;
         font-weight: 300;
     }
 }
 
 .btn {
+    text-align: center;
+    
     a {
         color: white;
         text-decoration: none;
         padding: 12px 24px;
         background-color: var(--black);
-        font-size: 14.592px;
+        font-size: 14px;
         transition: .3s;
     }
 }

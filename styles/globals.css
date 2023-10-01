@@ -119,8 +119,7 @@ img {
 }
 
 body {
-  padding-top: calc(86px + 38.2px);
-  padding-bottom: calc(86px + 38.2px);
+  padding: 124px 23px;
 }
 
 .mb76 {

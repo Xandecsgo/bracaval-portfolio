@@ -1,9 +1,28 @@
+.mobi {
+    display: flex;
+    padding: 23px;
+    font-size: 14px;
+    height: 86px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    align-items: center;
+
+    .logo {
+        position: fixed;
+        fill: var(--black);
+    }
+}
+
 .header {
     display: flex;
     padding: 23px;
-    font-size: 14.59px;
+    font-size: 14px;
     height: 86px;
-    background-color: white; 
+    background-color: white;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -17,7 +36,7 @@
         justify-content: center;
         width: 100%;
 
-        & > div {
+        &>div {
             position: absolute;
             right: 0;
             transition: all var(--anim) ease-in-out;
@@ -26,6 +45,7 @@
         ul:nth-of-type(1) {
             position: absolute;
             left: 0;
+            fill:var(--black)
         }
 
         ul:nth-of-type(3) {
@@ -33,9 +53,9 @@
             right: 0;
         }
 
-        .shape {
+        .shape, .shape2 {
             position: absolute;
-            top: 0px;
+            top: -112px;
             right: 0px;
             fill: var(--black);
             transition: var(--anim);
@@ -43,31 +63,33 @@
             svg {
                 width: 400px;
             }
-            
+
 
             a {
                 color: white;
                 padding: 8px 20px;
                 position: absolute;
                 width: 100%;
-                bottom: 37%;
+                bottom: -106%;
                 left: 0;
                 transform: rotate(-6deg);
             }
 
             a:nth-of-type(1) {
-                left: 23px;
+                left: 50px;
             }
 
             a:nth-of-type(2) {
-                left: 115px;
-                bottom: 43%;
+                left: 136px;
+                bottom: -100%
             }
         }
 
+        
+
         ul:nth-of-type(3) {
             a {
-                background-color:var(--black) ;
+                background-color: var(--black);
                 padding: 8px 20px;
             }
         }
@@ -76,13 +98,228 @@
         a {
             color: white;
         }
-        
+
         ul {
-        display: flex;
-        align-items: center;
-        gap: 23px;
+            display: flex;
+            align-items: center;
+            gap: 23px;
         }
 
+
+    }
+}
+
+
+
+
+
+//BURGER//BURGER//BURGER//BURGER//BURGER//BURGER//BURGER//BURGER
+
+.mobileMenu {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--black);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    top: 14px;
+    cursor: pointer;
+    display: none;
+  
+    &.mobileMenuOpen {
+      span {
+        &:before {
+          transform: rotate(90deg);
+          left: 5px;
+          width: 50%;
+          top: -6px;
+  
+        }
+  
+        & {
+          transform: rotate(-45deg);
+        }
+  
+        &:after {
+          transform: rotate(90deg);
+          left: 5px;
+          width: 50%;
+          top: 6px;
+        }
+      }
+    }
+  
+    span {
+      background: #fff;
+      border-radius: 50px;
+      bottom: 0;
+      display: inline-block;
+      height: 3px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      z-index: 3;
+  
+      &:before {
+        background: #fff;
+        border-radius: 50px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+        width: 100%;
+        top: -8px;
+      }
+  
+      &:after {
+        background: #fff;
+        border-radius: 50px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+        width: 100%;
+        top: 8px;
+      }
+    }
+  }
+
+
+  
+  
+
+@media only screen and (max-width: 1280px) {
+    .header {
+        .shape, .shape2 {
+
+            svg {
+                width: 274px !important;
+            }
+            
+            a:nth-of-type(1) {
+                bottom: -116% !important;
+            }
+
+            a:nth-of-type(2) {
+                bottom: -110% !important;
+            }
+
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .mobileMenu {
+        display: block;
+      }
+    
+      .header {
+        position: fixed;
+        z-index: 98;
+        top: 0;
+        left: 0;
+        display: none;
+        padding: 0;
+    
+        &.headerMobileOpen {
+          display: block;
+        }
+    
+        nav {
+          position: fixed;
+          width: 100vw;
+          height: 100vh;
+          z-index: 98;
+          background-color: var(--black);
+          display: block;
+          text-align: center;
+          padding-top: 250px;
+    
+          .menuLeft {
+            li:first-child {
+              margin-bottom: 156px;
+            }
+          }
+    
+          ul {
+            display: block;
+            width: 100%;
+    
+            &:not(:last-of-type) {
+              margin-bottom: 32px;
+              position: relative !important;
+            }
+    
+            li {
+              display: block;
+              width: 100%;
+    
+              &:not(:last-of-type) {
+                margin-bottom: 32px;
+              }
+    
+              a {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 22px;
+              }
+    
+              div {
+                margin-left: 8px;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .header {
+
+        ul:nth-of-type(1) {
+            z-index: 1;
+            fill:white!important;
+        }
+
+        ul:nth-of-type(2) {
+            z-index: 1;
+            color: white;
+
+        }
+
+       
+
+        .shape2 {
+            display: block !important;
+            top: -80px !important; 
+
+            svg {
+                width: 1000px !important;
+            }
+        }
+
+        .shape {
+            display: none !important;
+        }
         
     }
 }

@@ -15,7 +15,7 @@
   .projet-info {
     position: absolute;
     background-color: #FFF;
-    top: 0;
+    bottom: 23px;
     right: 0;
     display: flex;
     padding: 23px;
@@ -43,8 +43,8 @@
     top: 24px;
     left: 24px;
     display: flex;
-    align-items: flex-start;
     gap: 23px;
+    flex-wrap: wrap;
 
     p {
       color: #FFF;
